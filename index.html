@@ -1,260 +1,231 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="./assets/logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta name="description" content="Okapi Service - Votre partenaire de confiance pour l'assainissement, le transport et la logistique, et l'accompagnement administratif." />
+  <meta name="keywords" content="assainissement, transport, logistique, services administratifs, Congo" />
+  <meta name="author" content="Okapi Service" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="./assets/logo.png" />
+  
+  <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="responsive.css" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <title>OkapiService</title>
+  
+  <title>Okapi Service - Solutions professionnelles d'assainissement et logistique</title>
 </head>
 
 <body>
-  <nav class="nav__container">
-        <div class="nav__logo">OSC</div>
-        <ul class="nav__links">
-            <li class="link"><a class="serv"  href="#">Accueil</a></li>
-            <li class="link dropdown">
-                <a class="serv"  href="#">
-                     Services <i class="ri-arrow-down-s-line"></i>
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a href="#myAssai">Assainissement</a></li>
-                    <li><a href="#myTrans">Transports et Logistique</a></li>
-                    <li><a  href="#myTrans">Accompagnement</a></li>
-                </ul>
-            </li>
-            <li class="link"><a class="serv" href="#myApro">À propos</a></li>
-            <li><button class="btn">Nous contacter</button></li>
+  <!-- Navigation -->
+  <nav class="nav__bar">
+    <div class="nav__logo">
+      <img src="./assets/logo white.png" alt="Logo Okapi Service" />
+    </div>
+    <ul class="nav__links">
+      <li class="link"><a class="serv" href="#accueil">Accueil</a></li>
+      <li class="link dropdown">
+        <a class="serv" href="#services">
+          Services <i class="ri-arrow-down-s-line"></i>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#services">Assainissement</a></li>
+          <li><a href="#services">Transports et Logistique</a></li>
+          <li><a href="#services">Accompagnement</a></li>
         </ul>
-    </nav>
-  <header class="section__container header__container">
+      </li>
+      <li class="link"><a class="serv" href="#myApro">À propos</a></li>
+      <li><button class="btn-n" onclick="location.href='#contact'">Nous contacter</button></li>
+    </ul>
+  </nav>
+
+  <!-- Section principale -->
+  <main id="accueil" class="section__container main__container">
     <h1 class="section__header">
-      Bienvenu chez Okapi Service<br />
-      et <span> Contact.</span>
+      Bienvenue chez Okapi Service & Contact<br />
+      <span>Votre partenaire de confiance</span>
     </h1>
     <p>
-      Notre entreprise s'engage à offrir des services de qualité dans plusieurs secteurs clés, allant du nettoyage et
-      assainissement à la gestion administrative.
+      Notre entreprise s'engage à offrir des services de qualité dans plusieurs secteurs clés, 
+      allant du nettoyage et assainissement à la gestion administrative.
       Nous mettons à votre disposition une équipe dédiée et compétente pour répondre à tous vos besoins.
     </p>
-    <button class="btn">Nous Contacter</button>
-  </header>
+    <button class="btn" onclick="location.href='#contact'">Découvrir nos services</button>
+  </main>
 
-  
-  
-
-  <section  id="myApro" class="section__container template__container">
+  <!-- Section À propos -->
+  <section id="myApro" class="section__container template__container">
     <div class="template__content">
-      <p class="section__subheader">A propos de nous</p>
-      <h2 class="section__header">Que devez-vous savoir sur Okapi Service & Contact ?</h2>
+      <p class="section__subheader">À propos de nous</p>
+      <h2 class="section__header">Expertise et professionnalisme à votre service</h2>
       <p class="description">
-        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+        Depuis notre création, Okapi Service s'est engagé à fournir des solutions innovantes et durables 
+        pour répondre aux besoins de nos clients. Notre expertise dans les domaines de l'assainissement, 
+        du transport et de la gestion administrative nous permet d'offrir un service complet et personnalisé.
       </p>
-      <button class="btn">Nous Contacter</button>
+      <button class="btn" onclick="location.href='#contact'">Contactez-nous</button>
     </div>
     <div class="template__image">
-      <img src="assets/fondé.png" alt="template" />
+      <img src="assets/fondé.png" alt="Notre équipe Okapi Service" loading="lazy" />
     </div>
   </section>
 
   <section class="section__container client__container">
     <p class="section__subheader">Nos Réalisations</p>
-    <h2 class="section__header">Ce que nous avons accompli</h2>
+    <h2 class="section__header">Projets réalisés avec succès</h2>
     <div class="client__grid">
       <div class="client__card">
-        <img src="assets/pic-1.jpg" alt="client" />
-        <h4>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</h4>
+        <img src="assets/pic-1.jpg" alt="Projet d'assainissement" loading="lazy" />
+        <h4>Assainissement urbain</h4>
         <p>
-          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+          Mise en place d'un système d'assainissement moderne pour une communauté urbaine, 
+          améliorant significativement la qualité de vie des résidents.
         </p>
       </div>
       <div class="client__card">
-        <img src="assets/pic-2.jpeg" alt="client" />
-        <h4>XXXXXXXXXXXXXXX</h4>
+        <img src="assets/pic-2.jpg" alt="Projet de logistique" loading="lazy" />
+        <h4>Transport et logistique</h4>
         <p>
-          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+          Gestion complète de la chaîne logistique pour des entreprises majeures, 
+          garantissant des livraisons efficaces et ponctuelles.
         </p>
       </div>
       <div class="client__card">
-        <img src="assets/pic-3.jpg" alt="client" />
-        <h4>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</h4>
+        <img src="assets/pic-3.jpg" alt="Support administratif" loading="lazy" />
+        <h4>Accompagnement administratif</h4>
         <p>
-          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+          Support administratif complet pour les entreprises en développement, 
+          facilitant leur croissance et leur conformité réglementaire.
         </p>
       </div>
     </div>
   </section>
 
-  <section class="section__container question__container">
-    <p class="section__subheader">Avez-vous une question ?</p>
-    <h2 class="section__header">Questions les plus posées</h2>
+  <!-- Section Services -->
+  <section id="services" class="section__container service__container">
+    <p class="section__subheader">Nos Services</p>
+    <h2 class="section__header">Solutions professionnelles sur mesure</h2>
+    <div class="service__grid">
+      <div id="assainissement" class="service__card">
+        <div class="service__icon">
+          <i class="fa-solid fa-broom"></i>
+        </div>
+        <h4>Nettoyage et Assainissement</h4>
+        <p>
+          Services professionnels de nettoyage et d'assainissement adaptés à vos besoins spécifiques, 
+          avec des équipements modernes et des produits respectueux de l'environnement.
+        </p>
+      </div>
+      <div id="accompagnement" class="service__card">
+        <div class="service__icon">
+          <i class="fa-solid fa-file-invoice"></i>
+        </div>
+        <h4>Accompagnement administratif</h4>
+        <p>
+          Support complet pour la gestion administrative, incluant le traitement des documents, 
+          la conformité réglementaire et le conseil personnalisé.
+        </p>
+      </div>
+      <div id="transport" class="service__card">
+        <div class="service__icon">
+          <i class="fa-solid fa-truck"></i>
+        </div>
+        <h4>Transports & Logistique</h4>
+        <p>
+          Solutions logistiques intégrées pour le transport de marchandises, 
+          avec suivi en temps réel et garantie de livraison sécurisée.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section FAQ -->
+  <section id="faq" class="section__container question__container">
+    <p class="section__subheader">Questions fréquentes</p>
+    <h2 class="section__header">Réponses à vos interrogations</h2>
     <div class="question__accordian">
       <div class="question__box">
         <div class="title">
-          <span>Quels services proposez-vous ?</span>
+          <span>Quels sont vos délais d'intervention ?</span>
           <span class="icon"><i class="ri-add-fill"></i></span>
         </div>
         <div class="content">
-          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+          Nous intervenons dans les 24 à 48 heures suivant votre demande, 
+          selon l'urgence et la complexité de la situation.
         </div>
       </div>
       <div class="question__box">
         <div class="title">
-          <span>Comment pouvons-nous vous joindre ?</span>
+          <span>Comment demander un devis ?</span>
           <span class="icon"><i class="ri-add-fill"></i></span>
         </div>
         <div class="content">
-          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+          Contactez-nous par téléphone ou via notre formulaire en ligne. 
+          Nous vous répondrons sous 24h avec un devis personnalisé.
         </div>
       </div>
       <div class="question__box">
         <div class="title">
-          <span>Avez-vous un service client ?</span>
+          <span>Quelles zones couvrez-vous ?</span>
           <span class="icon"><i class="ri-add-fill"></i></span>
         </div>
         <div class="content">
-          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-        </div>
-      </div>
-      <div class="question__box">
-        <div class="title">
-          <span>Quels sont les prix de vos services ?</span>
-          <span class="icon"><i class="ri-add-fill"></i></span>
-        </div>
-        <div class="content">
-          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-        </div>
-      </div>
-      <div class="question__box">
-        <div class="title">
-          <span>Où est située l'entreprise ?</span>
-          <span class="icon"><i class="ri-add-fill"></i></span>
-        </div>
-        <div class="content">
-          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+          Nous intervenons dans toute la région, avec une présence particulière 
+          dans les zones urbaines et périurbaines.
         </div>
       </div>
     </div>
   </section>
 
-  <section id="myAssai" class="section__container service__container">
-    <p class="section__subheader">Nos Services</p>
-    <h2 class="section__header">Découvrez notre gamme complète de services</h2>
-    <div class="service__grid">
-        <div class="service__card">
-            <div class="service__icon">
-                <i class="fa-solid fa-broom" style="font-size: 50px; color: #333;"></i>
-            </div>
-            <h4>Nettoyage et Assainissement</h4>
-            <p>
-                Nous offrons des services de nettoyage professionnels pour tous vos besoins.
-            </p>
-        </div>
-        <div class="service__card">
-            <div class="service__icon">
-                <i class="fa-solid fa-file-invoice" style="font-size: 50px; color: #333;"></i>
-            </div>
-            <h4 id="myAcco">Accompagnement administratif</h4>
-            <p>
-                Notre équipe vous accompagne dans la gestion de vos tâches administratives.
-            </p>
-        </div>
-        <div id="myTrans" class="service__card">
-            <div class="service__icon">
-                <i class="fa-solid fa-credit-card" style="font-size: 50px; color: #333;"></i>
-            </div>
-            <h4>Transactions bancaires</h4>
-            <p>
-                Facilitez vos transactions bancaires avec notre service sécurisé.
-            </p>
-        </div>
-        <div class="service__card">
-            <div class="service__icon">
-                <i class="fa-solid fa-truck" style="font-size: 50px; color: #333;"></i>
-            </div>
-            <h4>Transports & Logistique</h4>
-            <p>
-                Des solutions de transport fiables et efficaces pour vos marchandises.
-            </p>
-        </div>
-        <div class="service__card">
-            <div class="service__icon">
-                <i class="fa-solid fa-mountain" style="font-size: 50px; color: #333;"></i>
-            </div>
-            <h4>Minerais</h4>
-            <p>
-                Nous fournissons des minerais de haute qualité pour divers secteurs.
-            </p>
-        </div>
-        <div class="service__card">
-            <div class="service__icon">
-                <i class="fa-solid fa-users" style="font-size: 50px; color: #333;"></i>
-            </div>
-            <h4>Gestion du personnel</h4>
-            <p>
-                Optimisez la gestion de votre personnel avec nos services spécialisés.
-            </p>
-        </div>
-    </div>
-  </section>
-
-  <footer class="section__container footer__container">
+  <!-- Footer -->
+  <footer id="contact" class="section__container footer__container">
     <div class="footer__grid">
       <div class="footer__col">
-        <h4>OSC</h4>
+        <h4>Contact</h4>
         <p>
-          <span><i class="ri-mail-fill"></i></span> okapiservice@gmail.com
+          <span><i class="ri-mail-fill"></i></span> contact@okapiservice.com
         </p>
         <p>
           <span><i class="ri-phone-fill"></i></span> +243 899672887
         </p>
+        <p>
+          <span><i class="ri-map-pin-fill"></i></span> Kinshasa, RDC
+        </p>
       </div>
       <div class="footer__col">
-        <h4>A propos</h4>
-        <p>Home</p>
-        <p>Pricing</p>
-        <p>Company</p>
-        <p>Resource</p>
+        <h4>Services</h4>
+        <p>Assainissement</p>
+        <p>Transport & Logistique</p>
+        <p>Accompagnement</p>
       </div>
       <div class="footer__col">
-        <h4>Features</h4>
-        <p>Blog</p>
-        <p>Privacy Policy</p>
-        <p>Terms & Conditions</p>
+        <h4>Légal</h4>
+        <p>Mentions légales</p>
+        <p>Politique de confidentialité</p>
+        <p>Conditions générales</p>
       </div>
       <div class="footer__col">
-        <h4>Contact</h4>
-        <p>Department</p>
-        <p>Media</p>
-        <p>Support</p>
+        <h4>Suivez-nous</h4>
+        <div class="socials">
+          <span><i class="ri-facebook-fill"></i></span>
+          <span><i class="ri-twitter-fill"></i></span>
+          <span><i class="ri-instagram-line"></i></span>
+          <span><i class="ri-linkedin-fill"></i></span>
+        </div>
       </div>
+    </div>
+    <div class="footer__bar">
+      <p>© 2024 Okapi Service. Tous droits réservés. | Développé par JeJ Inc.</p>
     </div>
   </footer>
-  <div class="section__container footer__bar">
-    <p>Copyright © 2025 Okapi Service & Contact. All rights reserved. Développé par JeJ Inc.</p>
-    <div class="socials">
-      <span><i class="ri-facebook-fill"></i></span>
-      <span><i class="ri-twitter-fill"></i></span>
-      <span><i class="ri-instagram-line"></i></span>
-      <span><i class="ri-youtube-fill"></i></span>
-    </div>
-  </div>
 
-  <script>
-    const questionBoxes = document.querySelectorAll(".question__box");
-
-    questionBoxes.forEach((box) => {
-      box.addEventListener("click", () => {
-        questionBoxes.forEach((item) => {
-          if (item !== box) item.classList.remove("active");
-        });
-        box.classList.toggle("active");
-      });
-    });
-
-  </script>
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
 </body>
 
 </html>

@@ -1,0 +1,10 @@
+@media (prefers-reduced-motion: no-preference) {
+    .nav__bar {
+      backdrop-filter: blur(10px);
+    }
+  }
+  @media (max-width: 768px) {
+    .nav__bar {
+      padding: 1rem;
+    }
+  }
